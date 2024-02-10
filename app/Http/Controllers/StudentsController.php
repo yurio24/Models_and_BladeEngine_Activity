@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Students;
 use Illuminate\Http\Request;
 
 class StudentsController extends Controller
 {
-    public function indext()
+    public function index()
     {
-        return 'Hello from Students Controller.';
+        $data = Students::all();
+
+        return view('students.index', ['students' => $data]);
     }
 }
