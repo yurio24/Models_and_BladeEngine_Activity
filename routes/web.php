@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\StudentsController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
@@ -84,3 +85,7 @@ Route::get('/user', [UserController::class, 'index']);
 // Route::get('/user/{id}', [UserController::class, 'show'])->middleware('auth');
 
 Route::get('/user/{id}', [UserController::class, 'show']);
+
+
+
+Route::get('/students', [StudentsController::class, 'index']);
