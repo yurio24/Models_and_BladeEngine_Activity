@@ -79,4 +79,8 @@ Route::get('/', function () {
 //default controller to route class connection
 Route::get('/user', [UserController::class, 'index']);
 
+// alias add name() method
+// Route::get('/user', [UserController::class, 'index'])->name('<alias>');
+// Route::get('/user/{id}', [UserController::class, 'show'])->middleware('auth');
+
 Route::get('/user/{id}', [UserController::class, 'show']);
