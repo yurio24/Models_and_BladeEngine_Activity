@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 
@@ -70,7 +71,12 @@ use Illuminate\Http\Request;
 //     return response()->download($path, $name, $headers);
 // });
 
-// default
+// default route
 Route::get('/', function () {
     return view('home');
 });
+
+//default controller to route class connection
+Route::get('/user', [UserController::class, 'index']);
+
+Route::get('/user/{id}', [UserController::class, 'show']);
