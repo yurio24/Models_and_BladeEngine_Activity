@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookController;
 use App\Http\Controllers\StudentsController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -86,6 +87,6 @@ Route::get('/user', [UserController::class, 'index']);
 
 Route::get('/user/{id}', [UserController::class, 'show']);
 
-
-
 Route::get('/students', [StudentsController::class, 'index']);
+
+Route::get('/books', [BookController::class, 'index']);
