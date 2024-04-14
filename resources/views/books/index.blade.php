@@ -3,7 +3,7 @@
 <div class="container mx-auto px-4 mt-8">
     <h2 class="text-2xl font-bold mb-4">List of Books</h2>
     
-    <table class="table-auto w-full border-collapse border border-gray-400">
+    <table class="table-auto w-full border-collapse border border-gray-400 bg-white">
         <thead>
             <tr class="bg-gray-200">
                 <th class="px-4 py-2 bg-blue text-white">ISBN</th>
@@ -25,6 +25,7 @@
             @endforeach
         </tbody>
     </table>
+    <br>
 </div>
 
 @include('partials.footer')

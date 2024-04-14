@@ -89,4 +89,6 @@ Route::get('/user/{id}', [UserController::class, 'show']);
 
 Route::get('/students', [StudentsController::class, 'index']);
 
+
+//Models_and_BladeEngine_Activity
 Route::get('/books', [BookController::class, 'index']);
