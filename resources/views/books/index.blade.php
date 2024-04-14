@@ -1,7 +1,7 @@
 @include('partials.header')
 
 <div class="container mx-auto px-4 mt-8">
-    <h2 class="text-2xl font-bold mb-4">List of Books</h2>
+    <h2 class="text-2xl font-bold mb-4 text-hutao">List of Books</h2>
     
     <table class="table-auto w-full border-collapse border border-gray-400 bg-white">
         <thead>
@@ -25,7 +25,8 @@
             @endforeach
         </tbody>
     </table>
-    <br>
+  <br>
+<br>
 </div>
 
 @include('partials.footer')
